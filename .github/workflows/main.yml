@@ -1,7 +1,8 @@
 name: "Build"
 on: [push, workflow_dispatch]
 jobs:
-  builds:
+  build:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-java@v4
